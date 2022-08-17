@@ -85,6 +85,11 @@ ul {
     padding-left: 3rem;
 }
 
+.land-content button a {
+    color: white;
+    text-decoration: none;
+}
+
 .land-vector-logo {
     width: 50%;
 }
@@ -138,10 +143,12 @@ ul {
 
 .features {
     margin-top: 3rem;
+    background: #fceadb;
 }
 
 .featured-para{
     padding: 0 4rem;
+    padding-top: 3rem;
     font-family: poppins;
     text-align: center;
     font-size: 1.2rem;
@@ -192,6 +199,8 @@ ul {
 /* Event Section */
 
 .events-section {
+    /* background: #fceadb; */
+    padding-bottom: 4rem;
     margin-top: 7rem;
 }
 
@@ -280,7 +289,140 @@ p{
     border: 3px #fd7e14;
 }
 
+.join-join {
+    background: white;
+}
+
 /* Event Section End */
+
+/* Footer Section */
+
+.footer-section {
+    margin-top: 5rem;
+}
+
+.sign-up-side button {
+    margin-top: 0.5rem;
+    margin-bottom:3rem;
+    padding: 0.5rem 1.1rem;
+    border-radius: 0.3rem;
+    background: #fd7e14;
+    /* font-size: 0.8rem; */
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+    border: none;
+    transition: 0.2s;
+    cursor: pointer;
+    border: 3px white;
+    outline: none;
+}
+
+.sign-up-side button:hover {
+    background: #e76a05;
+    /* color: #fd7e14; */
+    border: 3px #fd7e14;
+}
+
+.sign-up-side h1{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.sign-up-side span{
+    color: #fd7e14;
+}
+
+.foot-parent {
+    background: #fceadb;
+    padding-left: 3rem;
+}
+
+.start-using {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-side {
+    width: 50%;
+}
+
+.vec-foot {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vec-foot img{
+    width: 70%;
+}
+
+.foot-footer {
+    display: flex;
+}
+
+.foot-1{
+    width: 33.3%;
+}
+
+.foot-1 h1{
+    font-size: 1.4rem;
+}
+
+.foot-1 p{
+    text-align: left;
+}
+
+.foot-1 span {
+    color: #fd7e14;
+}
+
+.foot-2{
+    width: 33.3%;
+}
+
+.list-foot-2{
+    display: flex;
+    justify-content: center;
+}
+
+.list-foot-2 ul{
+    display: block;
+}
+
+.list-foot-2 li{
+    font-family: Poppins;
+    font-size: 0.8rem;
+    padding: 0.5rem 0;
+}
+
+.foot-3{
+    width: 33.3%;
+}
+
+.social-icons{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    padding: 0 1rem;
+}
+
+.social-icon {
+    color: #fd7e14;
+}
+
+.sign-up-side button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Footer Section End */
 
 @media (max-width: 800px){
     .container{
