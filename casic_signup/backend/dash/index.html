@@ -25,12 +25,12 @@
             </div>
             <div class="sidebar">
             <a href="#">
-                <span class="material-icons-sharp">manage_accounts</span>
-                <h3>Account</h3>
-            </a>
-            <a href="#" class="active">
                 <span class="material-icons-sharp">grid_view</span>
                 <h3>Dashboard</h3>
+            </a>
+            <a href="#" class="active">
+                <span class="material-icons-sharp">manage_accounts</span>
+                <h3>Account</h3>
             </a>
             <a href="#">
                 <span class="material-icons-sharp">emoji_events</span>
@@ -55,7 +55,7 @@
                 <h3>Notification</h3>
                 <span class="message-count" >5</span>
             </a>
-            <a href="http://localhost/casic_signup/backend/dash/index.html">
+            <a href="#">
                 <span class="material-symbols-sharp">campaign</span>
                 <h3>Publicize</h3>   
             </a>
@@ -68,128 +68,78 @@
 
         <!--------------------------------END OF ASIDE-------------------------------------------------------->
         <main>
-            <h1>Account</h1>
+            <section class="glass">
+                <div class="dashboard">
+                  <div class="links">
+                    <div class="link">
+                      <h2></h2>
+                    </div>
+                    <div class="link">
+                      <h2>Instagram Pannel</h2>
+                    </div>
+                    <div class="link">
+                      <h2>Linked In Pannel</h2>
+                    </div>
+                    <div class="link">
+                      <h2>Registration Pannel</h2>
+                    </div>
+                  </div>
+                  <div class="pro">
+                    <h2>Join  CASIC.</h2>
+                  </div>
+                </div>
+                <div class="games">
+                  
+                    <h1>Advertisement Form</h1>
+                  
+        
+                    <div class="container">
+        
+                      
+                      <div class="cards">
+                        <div class="card">
+                          <div class="card-info">
+                            <form action="advertise.php" method="POST">
+                              <input type="text" name="name" placeholder="Full Name" required>
+                              <input type="email" name="email" placeholder="Email" required>
+                              <input type="text" name="organisation" placeholder="Name of Organisation" required>
+                              <input type="text" name="poster" placeholder="Poster Link" required>
+                              <input type="text" name="linked_profile" placeholder="Linked In Page of Organisation">
+                              <select name="state" >
+                                  <option value='odisha'>Odisha</option>
+                                  <option value='west_bengal'>west Bengal</option>
+                                  <option value='bihar'>Bihar</option>
+                                  <option value='maharahtra'>Maharashtra</option>
+                                  <option value='kerela'>Kerela</option>
+                                  <option value='gujarat'>Gujarat</option>
+                                  <option value='rajasthan'>Rajasthan</option>
+                                  <option value='tamil_naidu'>Tamil Naidu</option>
+                              </select>
+                              <input type="text" name="description1" placeholder="Description of  post" required>
+                              <a href="http://localhost/casic_signup/backend/index.php">
+                               <button type="submit">Send</button>
+                              </a>
+                          </form>
+                          </div>
+                        </div>
+        
+        
+        
+        
+                    </div>
+                  
+        
+        
+        
+                  </div>
+                </div>
+              </section>
+           
      
-            <div class="date">
-                <input type="date">
-                <span class="material-icons-sharp">calendar_month</span>
-            </div>
+            
 
-            <div class="insights">
-                <div class="sales">
-                    <span class="material-icons-sharp">analytics</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Events</h3>
-                            <h2>4</h2>
-                            <h3>Registered Events</h3>                           
-                            <h2>3</h2>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>80%</p>
-                            </div>                            
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 7 Days</small>
-                </div>
-                <!----------------- END OF SALES------------------->
-                <div class="expenses">
-                    <span class="material-icons-sharp">insights</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Total Web-Shops</h3>
-                            <h2>6</h2>
-                            <h3>Attended Web-Shops</h3>                           
-                            <h2>3</h2>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>70%</p>
-                            </div>                            
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 3 Days</small>
-                </div>
-                <!----------------- END OF COURSE PROGRESS------------------->
-                <div class="income">
-                    <span class="material-icons-sharp">psychology</span>
-                    <div class="middle">
-                        <div class="left">
-                            <h3>Task Points</h3>
-                            <h2>20</h2>
-                            <h3>Completed Tasks</h3>                           
-                            <h2>14</h2>
-                        </div>
-                        <div class="progress">
-                            <svg>
-                                <circle cx='38' cy='38' r='36'></circle>
-                            </svg>
-                            <div class="number">
-                                <p>50%</p>
-                            </div>                            
-                        </div>
-                    </div>
-                    <small class="text-muted">Last 7 Days</small>
-                </div>
-                <!----------------- END OF TOTAL POINTS------------------->
-            </div>
             <!-----------------END OF INSIGHTS------------------------------------------>
-            <div class="recent-orders">
-                <h2>Recent Events</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th width="25%">Event Name</th>
-                            <th width="25%">Event ID</th>
-                            <th width="25%">Event Date</th>
-                            <th width="25%">Status</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-define("DB_SERVER", "localhost");
-define("DB_USER", "root");
-define("DB_PASSWORD", "");
-define("DB_DATABASE", "casic");
-$conn = mysqli_connect(DB_SERVER , DB_USER, DB_PASSWORD, DB_DATABASE);
-if ($conn->connect_error) 
-{
-    die("Connection failed: " . $conn->connect_error);
-}
-mysqli_set_charset($conn,"utf8");
-date_default_timezone_set("Asia/Kolkata");
-$display=mysqli_query($conn,"select *from events");
-while($event=mysqli_fetch_array($display))
-{
-echo "
-<tr>
-<td>".$event['event_id']."</td>
-<td>".$event['event_name']."</td>
-<td>".$event['event_date']."</td>";
-if ($event['event_status']=='registered')
-{
-echo "<td class='success'>".$event['event_status']."</td>";
-}
-if ($event['event_status']=='pending')
-{
-echo "<td class='warning'>".$event['event_status']."</td>";
-}
-echo "</tr>
-";
-}
-?>
-                        
-                    </tbody>
-                </table>
-                <a href="#">Show All</a>
-            </div>
+            
         </main>
         <!--------------------------------END OF MAIN------------------------------------------------->
         <div class="right">

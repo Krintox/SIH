@@ -17,7 +17,7 @@ $query=mysqli_query($conn,"select *from users where email='$email' and password=
 $check=mysqli_num_rows($query);
 if($check!='0')
 {
-header("Location:backend/index.html");
+header("Location:backend/index.php");
 }
 else
 {
